@@ -9,6 +9,7 @@
     background: linear-gradient(90deg, rgba(19, 49, 21, .8) , rgba(53, 51, 51, .8));
     width: 100vw;
     min-height: 100vh;
+    margin: 0 auto;
 }
 
 header{
@@ -71,13 +72,14 @@ input[type=range]:hover{
       outline: none;
       width: 50px;
      cursor: pointer;
+     margin: 1em 0;
   }
 
 
 .img{
     text-align: center;
     padding: 2em;
-
+    width: 100%;
 }
 
 :root{
@@ -91,6 +93,13 @@ img{
     padding: var(--spacing);
     background: var(--base);
     filter: blur(var(--blur));
+   
+}
+
+@media screen and (max-width : 500px){
+    img{
+        width: 100%;
+    }
 }
 
 .h1{
